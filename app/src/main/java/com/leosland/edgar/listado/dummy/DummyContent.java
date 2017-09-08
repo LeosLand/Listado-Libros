@@ -13,23 +13,28 @@ import java.util.Map;
  */
 public class DummyContent {
 
-    /**
-     * An array of sample (dummy) items.
-     */
     public static final List<DummyItem> ITEMS = new ArrayList<DummyItem>();
-
-    /**
-     * A map of sample (dummy) items, by ID.
-     */
     public static final Map<String, DummyItem> ITEM_MAP = new HashMap<String, DummyItem>();
-
     private static final int COUNT = 25;
-
     static {
-        // Add some sample items.
-        for (int i = 1; i <= COUNT; i++) {
-        //addItem(createDummyItem(i));
-        }
+        addItem(new DummyItem("1",
+                "Harry potter",
+                "http://www.harrypotter.com",
+                "http://3.bp.blogspot.com/-TF8bS9iO95Q/Tdhgtn3MXTI/AAAAAAAAAi4/66xBC_2W1QU/s1600/harry-potter-y-la-piedra-filosofal-poster.jpg"));
+        addItem(new DummyItem("2",
+                "Los Tres Mosqueteros",
+                "https://es.wikisource.org/wiki/Los_tres_mosqueteros:_Cap%C3%ADtulo_I",
+                "http://www.bne.es/es/Micrositios/Guias/novela_historica/resources/images/tresmosqueteros_grande.JPG"));
+        addItem(new DummyItem("3",
+                "Narnia Libro 1",
+                "http://www.gandhi.com.mx/el-sobrino-del-mago-vol-01-cronicas-de-narnia",
+                "https://images-cloud.fiuxy.com/VfysBSI.jpg"));
+//    static {
+//        // Add some sample items.
+//        for (int i = 1; i <= COUNT; i++) {
+//        addItem(createDummyItem(i));
+//        }
+//    }
     }
 
     private static void addItem(DummyItem item) {
@@ -72,18 +77,6 @@ public class DummyContent {
         @Override
         public String toString() {
             return Book_name;
-        }
-        static{
-            addItem(new DummyItem("1",
-                    "HarryPotter 1",
-                    "https://www.7novels.com/harry-potter-and-the-philosophers-stone/chapter-1-the-boy-who-lived-67685.html",
-                    "https://www.google.com.mx/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwiWk5rln4_WAhVCxVQKHS17Ds0QjRwIBw&url=http%3A%2F%2Felfinal-delahistoria.blogspot.com%2F2011%2F05%2Fresena-pelicula-harry-potter-y-la_27.html&psig=AFQjCNHJoCrtDbwikWGbHJYOa--dTcBxcA&ust=1504742234124483"));
-            addItem(new DummyItem("2",
-                    "Narnia 1","http://2novels.net/the-lion-the-witch-and-the-wardrobe/chapter-one-136273.html",
-                    "https://www.google.com.mx/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwior5KGoI_WAhVnh1QKHfT-AdwQjRwIBw&url=http%3A%2F%2Frippygqharrison.blogspot.com%2F2010%2F06%2Fnarnia-1.html&psig=AFQjCNEcBnjE4_vDVQjXMlzKzfrUMQK50A&ust=1504742303882719"));
-            addItem(new DummyItem("3",
-                    "DonQuijote 1 y 2","http://www.donquijote.org/spanishlanguage/literature/library/quijote/",
-                    "https://www.google.com.mx/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwivldORoI_WAhUhrFQKHeRMAi4QjRwIBw&url=https%3A%2F%2Fwww.umanitoba.ca%2Foutreach%2Fcm%2Fvol13%2Fno7%2Ftalesofdon.html&psig=AFQjCNHtn-E0ZQ7udSSPBbkrjua7WM3M8Q&ust=1504742325666050"));
         }
     }
 }
