@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.facebook.drawee.view.SimpleDraweeView;
 import com.leosland.edgar.listado.dummy.DummyContent;
 
 /**
@@ -77,6 +78,10 @@ public class ItemDetailFragment extends Fragment {
         if (mItem != null) {
             ((TextView) rootView.findViewById(R.id.item_detail)).setText(mItem.Buyable_link);
         }
+
+        Uri uri = Uri.parse(mItem.Book_imagen);
+        SimpleDraweeView draweeView = (SimpleDraweeView) rootView.findViewById(R.id.my_image_view);
+        draweeView.setImageURI(uri);
 
         return rootView;
     }

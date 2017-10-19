@@ -18,17 +18,17 @@ public class DummyContent {
     private static final int COUNT = 25;
     static {
         addItem(new DummyItem("1",
-                "Harry potter",
-                "http://www.harrypotter.com",
+                "Harry potter - Libro 1",
+                "Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley. \nHarry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para siempre.",
                 "http://3.bp.blogspot.com/-TF8bS9iO95Q/Tdhgtn3MXTI/AAAAAAAAAi4/66xBC_2W1QU/s1600/harry-potter-y-la-piedra-filosofal-poster.jpg"));
         addItem(new DummyItem("2",
                 "Los Tres Mosqueteros",
-                "https://es.wikisource.org/wiki/Los_tres_mosqueteros:_Cap%C3%ADtulo_I",
+                "La acción se sitúa durante el reinado de Luis XIII, en Francia. \nD'Artagnan es un joven de 18 años, hijo de un noble gascón, antiguo mosquetero, de escasos recursos económicos. Se dirige a París con una carta de su padre para el señor de Treville, jefe de los Mosqueteros del Rey. En una posada, durante su ruta, D'Artagnan desafía a un caballero que acompaña a una bella y misteriosa dama. Los tres mosqueteros es, casi con toda seguridad, la obra más conocida de su autor, el escritor francés Alejandro Dumas. A lo largo del último siglo, esta novela ha sido llevada al cine y la televisión en numerosas ocasiones.",
                 "http://www.bne.es/es/Micrositios/Guias/novela_historica/resources/images/tresmosqueteros_grande.JPG"));
         addItem(new DummyItem("3",
                 "Narnia Libro 1",
-                "http://www.gandhi.com.mx/el-sobrino-del-mago-vol-01-cronicas-de-narnia",
-                "https://images-cloud.fiuxy.com/VfysBSI.jpg"));
+                "Narnia... un lugar por el que deambulan Bestias Parlantes... donde aguarda una bruja.\nDos amigos, víctimas del poder de unos anillos mágicos, son arrojados a otro mundo en el que una malvada hechicera intenta convertirlos en sus esclavos. Pero entonces aparece Aslan y con su canción va hilando el tejido de un nuevo mundo que recibirá el nombre de Narnia.",
+                "https://imagessl4.casadellibro.com/a/l/t0/24/9788408057024.jpg"));
 //    static {
 //        // Add some sample items.
 //        for (int i = 1; i <= COUNT; i++) {
